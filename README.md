@@ -1,4 +1,4 @@
-# 2-days-bootcamp-java
+# 2 days bootcamp java
 
 Este repositório reúne os exercícios, exemplos e pequenos projetos desenvolvidos durante um bootcamp de Java de 2 dias.
 
@@ -13,11 +13,6 @@ O projeto tem como foco praticar os conceitos fundamentais da linguagem Java, co
 - uso de estruturas condicionais e laços de repetição
 - expressões lambda e programação funcional simples
 - construção de exemplos práticos com interação entre personagens
-
-## Estrutura do repositório
-
-- `game/` – exemplos de lógica de jogo, com personagens, atributos e interações simples
-- `JavaCore/` – exercícios sobre fundamentos de Java, classes, listas, condicionais e outros conceitos básicos
 
 ## Exemplos principais
 
