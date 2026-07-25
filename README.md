@@ -1,41 +1,65 @@
 # 2 days bootcamp java
 
-Este repositório reúne os exercícios, exemplos e pequenos projetos desenvolvidos durante um bootcamp de Java de 2 dias.
+Repositório com exercícios, exemplos e pequenos projetos usados durante um bootcamp de Java (2 dias). Ideal para estudar conceitos básicos e praticar POO, estruturas de controle, coleções e expressões lambda.
+
+## Estrutura do repositório
+
+- `game/` — exemplo simples de jogo (herói vs monstro).
+- `JavaCore/` — exercícios e exemplos sobre fundamentos da linguagem.
+- `CalcTools/` — exemplos de calculadora e utilitários.
 
 ## Objetivo
 
-O projeto tem como foco praticar os conceitos fundamentais da linguagem Java, com atenção especial a:
+Praticar os conceitos fundamentais de Java e fornecer exemplos executáveis que ilustram:
 
-- sintaxe básica e estruturas de controle
-- tipos de dados e variáveis
-- programação orientada a objetos (POO)
-- criação de classes, objetos e relacionamentos entre entidades
-- uso de estruturas condicionais e laços de repetição
-- expressões lambda e programação funcional simples
-- construção de exemplos práticos com interação entre personagens
+- Sintaxe básica, tipos e variáveis
+- Programação Orientada a Objetos (classes, herança, polimorfismo)
+- Estruturas condicionais e laços
+- Lambda e programação funcional básica
 
 ## Exemplos principais
 
-- `game/Game.java` – classe principal para executar um exemplo de jogo com herói e monstro
-- `JavaCore/Main.java` – classe principal para executar alguns exercícios de JavaCore
+- `game/Game.java` — exemplo de jogo para executar a interação entre `Heroi` e `Monstro`.
+- `JavaCore/Main.java` — ponto de entrada com alguns exercícios de exemplo.
 
-## Como executar
+## Como compilar e executar
 
-1. Abra o terminal na raiz do projeto.
-2. Compile a classe desejada com o comando:
+Recomenda-se compilar todos os arquivos e executar a classe que contém o método `main` desejado.
 
-```bash
-javac game/Game.java
-java -cp game Game
-```
-
-Ou, para o exemplo de `JavaCore`:
+Compilar e executar apenas um exemplo (ex.: jogo):
 
 ```bash
-javac JavaCore/Main.java
-java -cp JavaCore Main
+mkdir -p out
+javac -d out game/*.java
+java -cp out Game
 ```
 
-## Observação
+Compilar e executar o exemplo `JavaCore`:
 
-Este repositório foi criado para estudo e prática rápida, então a organização é simples e voltada para o aprendizado de conceitos essenciais de Java.
+```bash
+mkdir -p out
+javac -d out JavaCore/*.java
+java -cp out Main
+```
+
+Compilar todo o projeto (modo geral):
+
+```bash
+mkdir -p out
+find . -name "*.java" -print | xargs javac -d out
+# Em seguida execute a classe com main (ex.: Main)
+java -cp out Main
+```
+
+Observações:
+
+- Se as classes estiverem declaradas dentro de `package`, chame o `java` usando o nome totalmente qualificado (ex.: `com.exemplo.App`).
+- Ajuste o nome da classe passada ao `java` conforme a classe que possui o `main` que você quer executar.
+
+## Contribuições
+
+Este repositório é destinado ao estudo; sinta-se livre para adicionar exemplos, correções e melhorias.
+
+---
+
+Atualizado para incluir instruções de compilação e explique a estrutura do projeto.
