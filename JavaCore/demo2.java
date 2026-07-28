@@ -26,8 +26,9 @@ public class demo2 {
          * este valor não pode ser alterado.
          */
         final int num = 8;
-        num = 9; // *Essa linha vai gerar um erro de compilação, pois não é possível alterar o
-                 // *valor de uma variável final.
+        // num = 9; // *Essa linha vai gerar um erro de compilação, pois não é possível
+        // alterar o
+        // *valor de uma variável final.
         System.out.println(num);
     }
 }
