@@ -28,7 +28,7 @@ public class Car {
         this.ano = ano;
     }
 
-    public static void main(String a[]) {
+    public static void main(String[] args) {
 
         // Aqui o constructor é chamado automaticamente ao criar o objeto car1.
         Car car1 = new Car("Uno", 1994);
